@@ -44,25 +44,21 @@ header a {
 
 /* main */
 main {
-    display: flex;
-    padding: 0 20px;
-    height: 100vh;
-    /* height: 800px; */
-    background-color: rgba(20, 25, 34, 1); 
+    display: flex; 
 }
 
 /* main sezione di sinistra */
 .section_left {
     height: calc(100vh - 90px);
-    /* position: fixed;
-    z-index: 2; */
+    position: fixed;
+    z-index: 2;
     flex-shrink: 0;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     width: 320px;
-    padding-right: 20px;
-    background-color:lightcoral;
+    padding: 0 20px;
+    background-color: black;
     color: #717171;
 }
 
@@ -127,20 +123,19 @@ main {
 /* sezione a destra */
 
 .section_right {
-    /* height: 300px; */
+    height: calc(100vh - 90px);
     width: 100%;
+    margin-left: 320px;
     padding: 110px 20px 0;
-    background-color: pink;
-    display: flex;
-    flex-wrap: wrap;
+    overflow-y: scroll;
+    background-color: #141922;
+    color: white;
 }
 
-/* .section_right div {
-    width: 150px;
-    height: 150px;
-    background-color: lightgreen;
-    border: 1px solid black;
-} */
+.section_right h2 {
+    margin: 20px 0 10px;
+}
+
 .top_list {
     /* display: flex;
     justify-content: center; */
@@ -156,4 +151,67 @@ main {
     color: #717171;
 }
 
+.gallery {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.container_album {
+    width: 200px;
+    height: 100%;
+    margin: 20px;
+    text-align: center;
+}
+.container_album img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 
+.gallery p {
+    color: #717171;
+}
+
+.gallery_create {
+    justify-content: flex-start;
+}
+
+.round_image {
+    border-radius: 50%;
+}
+
+/* footer */
+
+footer {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 90px;
+    padding: 20px;
+    background-color: #282828;
+    color: white;
+}
+#album_footer {
+    width: 50px;
+}
+
+.left_footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.left_footer_item {
+    margin: 10px;
+}
+
+.left_footer a {
+    color: #808080;
+    padding: 5px;
+}
+
+.left_footer_item p:nth-child(2) {
+    color: #808080;
+}
