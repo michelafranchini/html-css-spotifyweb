@@ -9,6 +9,13 @@ body {
     /* background-color: aqua; */
 }
 
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
 /* header */
 
 header {
@@ -16,6 +23,7 @@ header {
     justify-content: space-between;
     align-items: center;
     position: fixed;
+    z-index: 3;
     padding: 0 20px;
     height: 100px;
     width: 100%;
@@ -31,7 +39,6 @@ header a {
     border-radius: 50px;
     padding: 15px 60px;
     text-transform: uppercase;
-    text-decoration: none;
     color: white;
 }
 
@@ -39,28 +46,30 @@ header a {
 main {
     display: flex;
     padding: 0 20px;
-    height: 800px;
+    height: 100vh;
+    /* height: 800px; */
     background-color: rgba(20, 25, 34, 1); 
 }
 
 /* main sezione di sinistra */
 .section_left {
-    /* height: 300px; */
+    height: calc(100vh - 90px);
+    /* position: fixed;
+    z-index: 2; */
     flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     width: 320px;
+    padding-right: 20px;
     background-color:lightcoral;
     color: #717171;
-}
-
-.section_right {
-    height: 300px;
-    background-color: pink;
 }
 
 .top_section_left a {
     display: block;
     margin-bottom: 15px;
-    font-size: 20px;
+    font-size: 15px;
     text-decoration: none;
     color: #717171;
 }
@@ -73,10 +82,78 @@ main {
     padding-top: 100px;
 }
 
+.section_left h3 {
+    margin: 40px 0 10px;
+}
 .playlist_list a {
+    font-size: 15px;
     text-decoration: none;
+    color: #717171;
+}
+.playlist_list span {
+    font-size: 18px;
+    vertical-align: top;
+}
+.playlist_list li {
+    padding-bottom: 10px;
 }
 
+.playlist_list div {
+    line-height: 45px;
+}
+.playlist_list i.fa-plus-square {
+    font-size: 45px;
+}
 
+.bottom_section_left {
+    line-height: 40px;
+}
+
+.bottom_section_left hr {
+    margin: 5px 0 15px;
+}
+
+#profile_logo {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #808080;
+}
+
+.bottom_section_left span {
+    vertical-align: top;
+}
+
+/* sezione a destra */
+
+.section_right {
+    /* height: 300px; */
+    width: 100%;
+    padding: 110px 20px 0;
+    background-color: pink;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* .section_right div {
+    width: 150px;
+    height: 150px;
+    background-color: lightgreen;
+    border: 1px solid black;
+} */
+.top_list {
+    /* display: flex;
+    justify-content: center; */
+    width: 100%;
+    text-align: center;
+}
+.top_list li {
+    display: inline;
+}
+.top_list a {
+    padding: 10px ;
+    text-transform: uppercase;
+    color: #717171;
+}
 
 
