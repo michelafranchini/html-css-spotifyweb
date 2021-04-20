@@ -15,6 +15,7 @@
         <header>
             <div>
                 <img src="img/logo.svg" alt="logo" id="main_logo">
+                <img src="img/logo-small.svg" alt="logo_small" id="logo_small">
             </div>
             <div>
                 <a href="#">Effettua l'upgrade</a>
@@ -25,14 +26,14 @@
         <!-- main -->
         <main>
             <!-- sezione width fissa a sinistra -->
-            <section class="section_left">
-                <div>
+            <aside class="section_left">
+                <div class="top_nav">
                     <div class="top_section_left">
-                        <a href="#"><i class="fas fa-home fa-2x"></i> Home </a>
-                        <a href="#"><i class="fas fa-search fa-2x"></i>Cerca </a>
-                        <a href="#"><i class="fab fa-gitter fa-2x"></i>La tua Libreria </a>
+                        <a href="#"><i class="fas fa-home fa-2x"></i><span class="display-hidden">Home</span></a>
+                        <a href="#"><i class="fas fa-search fa-2x"></i><span class="display-hidden">Cerca</span> </a>
+                        <a href="#"><i class="fab fa-gitter fa-2x"></i><span class="display-hidden">La tua libreria</span></a>
                     </div>
-                    <div>
+                    <div class="display-hidden">
                         <h3>PLAYLIST</h3>
                         <ul class="playlist_list">
                             <div>
@@ -51,14 +52,14 @@
                 </div>
                 <div class="bottom_section_left">
                     <div>
-                        <i class="far fa-arrow-alt-circle-down"></i>
-                        <span>Installa app</span>
+                        <a href="#"><i class="far fa-arrow-alt-circle-down"></i></a>
+                        <a href="#"><span class="display-hidden">Installa app</span></a>
                     </div>
                     <hr>
                     <img src="img/profile.svg" alt="profile" id="profile_logo">
-                    <span>Michela Franchini</span>
+                    <span class="display-hidden">Michela Franchini</span>
                 </div>
-            </section>
+            </aside>
             <!-- /sezione width fissa a sinistra -->
 
             <!-- sezione scroll con i contenuti -->
@@ -75,39 +76,54 @@
                 </div>
                 <!-- recently played -->
                 <div>
-                    <div>
+                    <div class="gallery_title">
                         <h2>Recently played</h2>
                     </div>
                     <div class="gallery gallery_recently">
                         <div class="container_album">
-                            <img src="img/metal_lifting.jpg" alt="metal">
+                            <a href="#"><img src="img/metal_lifting.jpg" alt="metal"></a>
                             <h3>Heavy Metal</h3>
                             <p>Subtitle</p>
                         </div>
                         <div class="container_album">
-                            <img src="img/stranger.jpeg" alt="stranger">
+                            <a href="#"><img src="img/stranger.jpeg" alt="stranger"></a>
                             <h3>Stranger Thing Vol. 1 (a Netflix Original Series Soundtrack)</h3>
                             <p>Kyle Dixon &amp; Michael Stein</p>
                         </div>
                         <div class="container_album">
-                            <img src="img/aquietplace.jpeg" alt="quiet">
+                            <a href="#"><img src="img/aquietplace.jpeg" alt="quiet"></a>
                             <h3>A quiet place</h3>
                             <p>Subtitle</p>
                         </div>
                         <div class="container_album">
-                            <img src="img/split.jpeg" alt="split">
+                            <a href="#"><img src="img/split.jpeg" alt="split"></a>
                             <h3>Split</h3>
                             <p>Subtitle</p>
                         </div>
                         <div class="container_album">
-                            <img src="img/cure.jpeg" alt="cure">
+                            <a href="#"><img src="img/cure.jpeg" alt="cure"></a>
                             <h3>A cure for wellness</h3>
                             <p>Subtitle</p>
                         </div>
                         <div class="container_album">
-                            <img src="img/sinister.jpeg" alt="sinister">
+                            <a href="#"><img src="img/sinister.jpeg" alt="sinister"></a>
                             <h3>Sinister</h3>
                             <p>Subtitle</p>
+                        </div>
+                        <div class="container_album">
+                            <a href="#"><img src="img/Violator.png" alt="Violator"></a>
+                            <h3>Depeche Mode</h3>
+                            <p>Subtitle</p>
+                        </div>
+                        <div class="container_album">
+                            <a href="#"><img src="img/imagine_dragons.jpg" alt="dragons"></a>
+                            <h3>Imagine Dragons</h3>
+                            <p>Subtitle</p>
+                        </div>
+                        <div class="container_album">
+                            <a href="#"><img src="img/muse.jpg" alt="muse"></a>
+                            <h3>Muse</h3>
+                            <p>Resistance</p>
                         </div>
                     </div>
                 </div>
@@ -115,17 +131,17 @@
 
                 <!-- Creato per te -->
                 <div>
-                    <div>
+                    <div class="gallery_title">
                         <h2>Creato per Michela</h2>
                         <p>Pi&ugrave; ascolti , pi&ugrave; saranno i suggerimenti</p>
                     </div>
                     <div class="gallery gallery_create">
                         <div class="container_album">
-                            <img src="img/radar.jpeg" alt="radar">
+                            <a href="#"><img src="img/radar.jpeg" alt="radar"></a>
                             <h3>Release Radar</h3>
                         </div>
                         <div class="container_album">
-                            <img src="img/mixdaily.jpeg" alt="dailymix">
+                            <a href="#"><img src="img/mixdaily.jpeg" alt="dailymix"></a>
                             <h3>Daily Mix 1</h3>
                         </div>
                     </div>
@@ -134,17 +150,17 @@
 
                 <!-- artisti più popolari -->
                 <div>
-                    <div>
+                    <div class="gallery_title">
                         <h2>Artisti pi&ugrave; popolari</h2>
                         <p>Pi&ugrave; ascolti , pi&ugrave; saranno i suggerimenti</p>
                     </div>
                     <div class="gallery gallery_create">
                         <div class="container_album">
-                            <img src="img/youg.jpeg" alt="youg" class="round_image">
+                            <a href="#"><img src="img/youg.jpeg" alt="youg" class="round_image"></a>
                             <h3>Youg</h3>
                         </div>
                         <div class="container_album">
-                            <img src="img/einaudi.jpeg" alt="einaudi" class="round_image">
+                            <a href="#"><img src="img/einaudi.jpeg" alt="einaudi" class="round_image"></a>
                             <h3>Einaudi</h3>
                         </div>
                     </div>
@@ -167,21 +183,44 @@
                     <p>Brano nome</p>
                 </div>
                 <div class="left_footer_item">
-                    <a href="#"><i class="far fa-heart fa-2x"></i></a>
-                    <a href="#"><i class="far fa-folder fa-2x"></i></a>
+                    <a href="#"><i class="far fa-heart"></i></a>
+                    <a href="#"><i class="far fa-folder"></i></a>
                 </div>
             </div>
             <!-- /album a sinistra -->
 
             <!-- player centrale -->
             <div class="center_footer">
-
+                <div class="player_icon">
+                    <a href="#"><i class="fas fa-random"></i></a>
+                    <a href="#"><i class="fas fa-step-backward"></i></a>
+                    <a href="#"><i class="far fa-play-circle"></i></a>
+                    <a href="#"><i class="fas fa-step-forward"></i></a>
+                    <a href="#"><i class="fas fa-redo-alt"></i></a>
+                </div>
+                <div class="progression_bar">
+                    <span>0.25</span>
+                    <div class="player">
+                        <hr class="left_bar">
+                        <div class="circle"></div>
+                        <hr class="right_bar">
+                    </div>
+                    <span>4.35</span>
+                </div>
             </div>
             <!-- /player centrale -->
 
             <!-- icone a destra -->
             <div class="right_footer">
-
+                <a href="#"><i class="fas fa-list"></i></a>
+                <a href="#"><i class="fas fa-desktop"></i></a>
+                <div class="progression_bar">
+                    <div class="player">
+                        <hr class="left_bar">
+                        <div class="circle"></div>
+                        <hr class="right_bar">
+                    </div>
+                </div>
             </div>
             <!-- /icone a destra -->
         </footer>
