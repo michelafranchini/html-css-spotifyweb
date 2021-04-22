@@ -253,8 +253,6 @@ main {
 /* layover album */
 .container_layover {
     position: relative;
-    width: 100%;
-    height: 100%;
 }
 
 .layover {
@@ -263,7 +261,7 @@ main {
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: 98%;
     background-color: rgba(0,0,0, 0.4);
 }
 
